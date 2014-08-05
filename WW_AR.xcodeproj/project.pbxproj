@@ -21,6 +21,8 @@
 		86F6DC67194B854D0061C89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F6DC49194B854D0061C89E /* UIKit.framework */; };
 		86F6DC6F194B854D0061C89E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86F6DC6D194B854D0061C89E /* InfoPlist.strings */; };
 		86F6DC71194B854D0061C89E /* WW_ARTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F6DC70194B854D0061C89E /* WW_ARTests.m */; };
+		86F6DC7C194B856C0061C89E /* PlaceOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F6DC7B194B856C0061C89E /* PlaceOfInterest.m */; };
+		86F6DC7F194B857E0061C89E /* ARView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F6DC7E194B857E0061C89E /* ARView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		86F6DC6C194B854D0061C89E /* WW_ARTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WW_ARTests-Info.plist"; sourceTree = "<group>"; };
 		86F6DC6E194B854D0061C89E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86F6DC70194B854D0061C89E /* WW_ARTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WW_ARTests.m; sourceTree = "<group>"; };
+		86F6DC7A194B856C0061C89E /* PlaceOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOfInterest.h; sourceTree = "<group>"; };
+		86F6DC7B194B856C0061C89E /* PlaceOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOfInterest.m; sourceTree = "<group>"; };
+		86F6DC7D194B857E0061C89E /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		86F6DC7E194B857E0061C89E /* ARView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +118,15 @@
 		86F6DC4B194B854D0061C89E /* WW_AR */ = {
 			isa = PBXGroup;
 			children = (
+				86F6DC7D194B857E0061C89E /* ARView.h */,
+				86F6DC7E194B857E0061C89E /* ARView.m */,
 				86F6DC54194B854D0061C89E /* WWAppDelegate.h */,
 				86F6DC55194B854D0061C89E /* WWAppDelegate.m */,
 				86F6DC57194B854D0061C89E /* Main.storyboard */,
 				86F6DC5A194B854D0061C89E /* WWViewController.h */,
 				86F6DC5B194B854D0061C89E /* WWViewController.m */,
+				86F6DC7A194B856C0061C89E /* PlaceOfInterest.h */,
+				86F6DC7B194B856C0061C89E /* PlaceOfInterest.m */,
 				86F6DC5D194B854D0061C89E /* Images.xcassets */,
 				86F6DC4C194B854D0061C89E /* Supporting Files */,
 			);
@@ -250,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F6DC7C194B856C0061C89E /* PlaceOfInterest.m in Sources */,
 				86F6DC56194B854D0061C89E /* WWAppDelegate.m in Sources */,
 				86F6DC52194B854D0061C89E /* main.m in Sources */,
 				86F6DC5C194B854D0061C89E /* WWViewController.m in Sources */,
+				86F6DC7F194B857E0061C89E /* ARView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
